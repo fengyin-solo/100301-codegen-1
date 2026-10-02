@@ -21,6 +21,9 @@ const Electricbill = () => import('@/views/electricbill/index.vue')
 const Demolition = () => import('@/views/demolition/index.vue')
 const Emergency = () => import('@/views/emergency/index.vue')
 const Energyeff = () => import('@/views/energyeff/index.vue')
+const Complaint = () => import('@/views/complaint/index.vue')
+const Callback = () => import('@/views/callback/index.vue')
+const Track = () => import('@/views/track/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -46,6 +49,9 @@ const router = createRouter({
     { path: '/demolition', name: 'demolition', component: Demolition },
     { path: '/emergency', name: 'emergency', component: Emergency },
     { path: '/energyeff', name: 'energyeff', component: Energyeff },
+    { path: '/complaint', name: 'complaint', component: Complaint },
+    { path: '/callback', name: 'callback', component: Callback },
+    { path: '/track', name: 'track', component: Track },
   ],
 })
 
